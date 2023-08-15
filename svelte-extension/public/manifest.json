@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+  
+    "name": "Currency Converter SVELTE THO",
+    "description": "Easily convert currencies with a click!",
+    "version": "1.0",
+  
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon16.png",
+      "128": "icons/icon16.png"
+    },
+  
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+  
+    "action": {
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon16.png"
+      },
+      "default_popup": "index.html"
+    },
+  
+    "background": {
+      "service_worker": "background.js"
+    },
+  
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+  }
+  
